@@ -23,6 +23,11 @@ class VistaModeloBasico{
             series_registradas.append(InformacionSerie(nombre: "Prueba", tipo: "prueba", fecha_estreno: 2017, sinopsis: "Aqui va una sipnosis muy larga", caratula: "Image"))
         }
         
+        estado_actual_de_la_aplicacion = .mostrando_series
         return true
+    }
+    
+    func cambiar_a_agregar_serie() -> Void{
+        estado_actual_de_la_aplicacion = .agregando_series
     }
 }

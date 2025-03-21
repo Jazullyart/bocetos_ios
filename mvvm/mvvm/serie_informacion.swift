@@ -8,14 +8,16 @@ import Foundation
 
 struct Temporada: Identifiable{
     var id = UUID()
+    
     var nombre: String
     var cantidad_capitulos: Int
 }
 
 struct Plataforma: Identifiable{
     var id = UUID()
+    
     var nombre: String
-    var icono: String
+    var imagen: String
 }
 
 struct InformacionSerie: Identifiable{
