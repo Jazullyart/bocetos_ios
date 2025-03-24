@@ -41,12 +41,18 @@ struct AgregarSerie: View {
             .background(Color.textFieldFondo)
             .cornerRadius(20)
             .shadow(color: .gray, radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
+            .frame(width: 350)
         
         if indicar_problemas{
             Text("Hay un problema con tu serie")
         }
         
         TextField("Tipo de la serie", text: $tipo_de_la_serie)
+            .padding(10)
+            .background(Color.textFieldFondo)
+            .cornerRadius(20)
+            .shadow(color: .gray, radius: /*@START_MENU_TOKEN@*/10/*@END_MENU_TOKEN@*/)
+            .frame(width: 350)
         
         Spacer()
         
