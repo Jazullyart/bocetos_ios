@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB790F022D945E91009BFD55 /* publicacion.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB790F012D945E91009BFD55 /* publicacion.swift */; };
+		FB790F042D946335009BFD55 /* comentario.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB790F032D946335009BFD55 /* comentario.swift */; };
 		FB87D1E92D9453700080BBF1 /* controlador_app.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB87D1E82D9453700080BBF1 /* controlador_app.swift */; };
 		FB9648262D91B0E4009D609B /* redes_socialesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9648252D91B0E4009D609B /* redes_socialesApp.swift */; };
 		FB9648282D91B0E4009D609B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9648272D91B0E4009D609B /* ContentView.swift */; };
@@ -20,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FB790F012D945E91009BFD55 /* publicacion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = publicacion.swift; sourceTree = "<group>"; };
+		FB790F032D946335009BFD55 /* comentario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = comentario.swift; sourceTree = "<group>"; };
 		FB87D1E82D9453700080BBF1 /* controlador_app.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = controlador_app.swift; sourceTree = "<group>"; };
 		FB9648222D91B0E4009D609B /* redes_sociales.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = redes_sociales.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB9648252D91B0E4009D609B /* redes_socialesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = redes_socialesApp.swift; sourceTree = "<group>"; };
@@ -87,6 +91,7 @@
 			isa = PBXGroup;
 			children = (
 				FB9648362D91B270009D609B /* Publicacion.swift */,
+				FB790F032D946335009BFD55 /* comentario.swift */,
 			);
 			path = modelos;
 			sourceTree = "<group>";
@@ -121,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				FB9648402D91BE1A009D609B /* publicaciones_general.swift */,
+				FB790F012D945E91009BFD55 /* publicacion.swift */,
 			);
 			path = publicaciones;
 			sourceTree = "<group>";
@@ -199,9 +205,11 @@
 				FB9648392D91B4A1009D609B /* placeholder_api.swift in Sources */,
 				FB9648372D91B270009D609B /* Publicacion.swift in Sources */,
 				FB9648282D91B0E4009D609B /* ContentView.swift in Sources */,
+				FB790F042D946335009BFD55 /* comentario.swift in Sources */,
 				FB96483D2D91BC3F009D609B /* controlador_publicaciones.swift in Sources */,
 				FB9648262D91B0E4009D609B /* redes_socialesApp.swift in Sources */,
 				FB96483B2D91B4AB009D609B /* errores.swift in Sources */,
+				FB790F022D945E91009BFD55 /* publicacion.swift in Sources */,
 				FB87D1E92D9453700080BBF1 /* controlador_app.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
