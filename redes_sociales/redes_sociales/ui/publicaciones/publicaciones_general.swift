@@ -8,7 +8,9 @@
 import SwiftUI
 
 struct GeneralPublicaciones: View {
-    @StateObject var controlador = ControladorPublicaciones()
+//    @StateObject var controlador = ControladorPublicaciones()
+    @Environment(ControladorAplicacion.self) var controlador
+    
     
     var body: some View {
         ScrollView{
@@ -22,16 +24,7 @@ struct GeneralPublicaciones: View {
                     }
                 }
             }
-            .onAppear{
-                print("hola mundo")
-                if controlador.publicaciones.isEmpty{
-                    Task{
-                        await controlador.obtener_publicaciones()
-                    }
-                }
-            }
         }
-    
     }
 
 #Preview {
