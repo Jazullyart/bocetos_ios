@@ -11,14 +11,13 @@ struct GeneralPublicaciones: View {
     //    @StateObject var controlador = ControladorPublicaciones()
     @Environment(ControladorAplicacion.self) var controlador
     
-    
     var body: some View {
         NavigationStack{
             ScrollView{
                 VStack{
                     ForEach(controlador.publicaciones){ publicacion in
                         NavigationLink {
-                            Text("Holi Mundo")
+                            PublicacionVista()
                         } label: {
                             HStack{
                                 Text("\(publicacion.id)")
@@ -26,11 +25,12 @@ struct GeneralPublicaciones: View {
                                     Text("\(publicacion.title)")
                                     Text("\(publicacion.body)")
                                 }
-                            } 
-//                            .onTapGesture {
-//                                print("Usted a seleccionado: \(publicacion.id)")
-//                            }
-                        }
+                            }
+
+                        }                            
+                        .simultaneousGesture(TapGesture().onEnded({
+                            controlador.seleccionar_publicacion(publicacion)
+                        }))
                     
                     }
                 }.padding()
