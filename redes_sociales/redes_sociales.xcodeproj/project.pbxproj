@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB703A9B2D9AEC8400739303 /* menu_aplicacion.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB703A9A2D9AEC8400739303 /* menu_aplicacion.swift */; };
 		FB790F022D945E91009BFD55 /* publicacion.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB790F012D945E91009BFD55 /* publicacion.swift */; };
 		FB790F042D946335009BFD55 /* comentario.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB790F032D946335009BFD55 /* comentario.swift */; };
 		FB87D1E92D9453700080BBF1 /* controlador_app.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB87D1E82D9453700080BBF1 /* controlador_app.swift */; };
@@ -24,6 +25,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FB703A9A2D9AEC8400739303 /* menu_aplicacion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = menu_aplicacion.swift; sourceTree = "<group>"; };
 		FB790F012D945E91009BFD55 /* publicacion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = publicacion.swift; sourceTree = "<group>"; };
 		FB790F032D946335009BFD55 /* comentario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = comentario.swift; sourceTree = "<group>"; };
 		FB87D1E82D9453700080BBF1 /* controlador_app.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = controlador_app.swift; sourceTree = "<group>"; };
@@ -52,6 +54,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FB703A992D9AEC6400739303 /* menu_inicial */ = {
+			isa = PBXGroup;
+			children = (
+				FB703A9A2D9AEC8400739303 /* menu_aplicacion.swift */,
+			);
+			name = menu_inicial;
+			sourceTree = "<group>";
+		};
 		FB9648192D91B0E4009D609B = {
 			isa = PBXGroup;
 			children = (
@@ -122,6 +132,7 @@
 		FB96483E2D91BDE8009D609B /* ui */ = {
 			isa = PBXGroup;
 			children = (
+				FB703A992D9AEC6400739303 /* menu_inicial */,
 				FBDAEAE52D97043B00DC9EE7 /* perfil_basico */,
 				FB96483F2D91BE04009D609B /* publicaciones */,
 			);
@@ -225,6 +236,7 @@
 				FB9648262D91B0E4009D609B /* redes_socialesApp.swift in Sources */,
 				FBDAEAE72D97045100DC9EE7 /* perfil_vista_basica.swift in Sources */,
 				FB96483B2D91B4AB009D609B /* errores.swift in Sources */,
+				FB703A9B2D9AEC8400739303 /* menu_aplicacion.swift in Sources */,
 				FB790F022D945E91009BFD55 /* publicacion.swift in Sources */,
 				FB87D1E92D9453700080BBF1 /* controlador_app.swift in Sources */,
 			);

@@ -14,21 +14,39 @@ struct PublicacionVista: View {
     
     var body: some View {
         Text("\(controlador.publicacion_seleccionada?.title ?? "Valor por defecto")")
+            .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+            .padding()
+        Divider()
         Text("\(controlador.publicacion_seleccionada?.body ?? "Valor por defecto")")
+            .padding()
         
         NavigationLink{
             PerfilBasicoVista()
         } label: {
             Text("Ver perfil")
-        }.simultaneousGesture(TapGesture().onEnded({
+        }
+        .simultaneousGesture(TapGesture().onEnded({
             controlador.ver_perfil(id: controlador.publicacion_seleccionada!.userId)
         }))
+        .foregroundColor(Color.teal)
+        
+        
+        Divider()
         
         ScrollView{
             VStack{
                 ForEach(controlador.comentarios){ comentario in
-                    Text("Usuario: \(comentario.name)")
-                    Text("\(comentario.body)")
+                    VStack(alignment: .leading){
+                        Text("Usuario: \(controlador.perfil_a_mostrar?.username)")
+                            .font(.title3)
+                            .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                            .padding()
+                        Text("\(comentario.name)")
+                            .padding()
+                        Text("\(comentario.body)")
+                            .padding()
+                    }.background(Color.red)
+                    Divider()
                 }
             }
         }
