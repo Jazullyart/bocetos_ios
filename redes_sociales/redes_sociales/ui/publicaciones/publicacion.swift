@@ -40,12 +40,10 @@ struct PublicacionVista: View {
                         Text("Usuario: \(controlador.perfil_a_mostrar?.username)")
                             .font(.title3)
                             .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
-                            .padding()
                         Text("\(comentario.name)")
-                            .padding()
                         Text("\(comentario.body)")
                             .padding()
-                    }.background(Color.red)
+                    }
                     Divider()
                 }
             }

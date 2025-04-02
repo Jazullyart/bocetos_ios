@@ -17,16 +17,7 @@ struct MenuNavegacion: View {
                 .badge(controlador.publicaciones.count)
             
             Text("Holi mundo dos")
-                .tabItem {
-                    Label{
-                        Text("Hola mundo desde abajo")
-                        Text("Esto es un segundo clic")
-                    } icon: {
-                        Circle()
-                            .frame(width: 44, height: 44, alignment: .center)
-                            .overlay(Text("JJ Abarhams"))
-                    }
-                }
+                .tabItem { }
             
             Text("Hola desde pantalla 3")
                 .tabItem { Label("Etiqueta de esta label", systemImage: "phone") }
