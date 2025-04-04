@@ -13,11 +13,11 @@ struct MenuNavegacion: View {
     var body: some View {
         TabView{
             GeneralPublicaciones()
-                .tabItem { Label("Es esta una pantalla", systemImage: "message") }
+                .tabItem { Label("Publicaciones", systemImage: "message") }
                 .badge(controlador.publicaciones.count)
             
-            Text("Holi mundo dos")
-                .tabItem { }
+            PantallaPersonajes()
+                .tabItem { Label("Dragon ball", systemImage: "cloud")}
             
             Text("Hola desde pantalla 3")
                 .tabItem { Label("Etiqueta de esta label", systemImage: "phone") }

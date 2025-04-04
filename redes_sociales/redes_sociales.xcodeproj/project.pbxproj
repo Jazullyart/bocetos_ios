@@ -27,6 +27,7 @@
 		FB9648412D91BE1A009D609B /* publicaciones_general.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9648402D91BE1A009D609B /* publicaciones_general.swift */; };
 		FBDAEAE42D9700FD00DC9EE7 /* perfil.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDAEAE32D9700FD00DC9EE7 /* perfil.swift */; };
 		FBDAEAE72D97045100DC9EE7 /* perfil_vista_basica.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBDAEAE62D97045100DC9EE7 /* perfil_vista_basica.swift */; };
+		FBEBF3E12DA0340F009C8696 /* PantallaPersonajes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBEBF3E02DA0340F009C8696 /* PantallaPersonajes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +52,7 @@
 		FB9648402D91BE1A009D609B /* publicaciones_general.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = publicaciones_general.swift; sourceTree = "<group>"; };
 		FBDAEAE32D9700FD00DC9EE7 /* perfil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = perfil.swift; sourceTree = "<group>"; };
 		FBDAEAE62D97045100DC9EE7 /* perfil_vista_basica.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = perfil_vista_basica.swift; sourceTree = "<group>"; };
+		FBEBF3E02DA0340F009C8696 /* PantallaPersonajes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PantallaPersonajes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -163,6 +165,7 @@
 		FB96483E2D91BDE8009D609B /* ui */ = {
 			isa = PBXGroup;
 			children = (
+				FBEBF3DF2DA033F6009C8696 /* dragon_ball */,
 				FB703A992D9AEC6400739303 /* menu_inicial */,
 				FBDAEAE52D97043B00DC9EE7 /* perfil_basico */,
 				FB96483F2D91BE04009D609B /* publicaciones */,
@@ -185,6 +188,14 @@
 				FBDAEAE62D97045100DC9EE7 /* perfil_vista_basica.swift */,
 			);
 			path = perfil_basico;
+			sourceTree = "<group>";
+		};
+		FBEBF3DF2DA033F6009C8696 /* dragon_ball */ = {
+			isa = PBXGroup;
+			children = (
+				FBEBF3E02DA0340F009C8696 /* PantallaPersonajes.swift */,
+			);
+			name = dragon_ball;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -274,6 +285,7 @@
 				FB86101A2D9D966600F3187A /* planeta.swift in Sources */,
 				FB790F022D945E91009BFD55 /* publicacion.swift in Sources */,
 				FB87D1E92D9453700080BBF1 /* controlador_app.swift in Sources */,
+				FBEBF3E12DA0340F009C8696 /* PantallaPersonajes.swift in Sources */,
 				FB86101E2D9D975D00F3187A /* transformacion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
