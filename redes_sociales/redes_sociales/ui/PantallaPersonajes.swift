@@ -12,33 +12,51 @@ struct PantallaPersonajes: View {
     
     var body: some View {
         if(controlador.pagina_resultados != nil){
-            ScrollView{
-                LazyVStack{
-                    ForEach(controlador.pagina_resultados!.items){ personaje in
-                        HStack{
-                            AsyncImage(url: URL(string: "\(personaje.image)")) { image in
-                                image
-                                    .image?.resizable()
-                                    .scaledToFit()
-                                    .frame(width: 150)
-                            } .shadow(color: Color.yellow, radius: 0, x: 5, y:5)
-                            VStack{
-                                Text("\(personaje.name)")
-                                    .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
-                                    .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+            NavigationStack{
+                ScrollView{
+                    LazyVStack{
+                        ForEach(controlador.pagina_resultados!.items){ personaje in
+                            NavigationLink{
+                                PersonajeVista()
+                            } label: {
+                                HStack{
+                                    AsyncImage(url: URL(string: "\(personaje.image)")) { image in
+                                        image
+                                            .image?.resizable()
+                                            .scaledToFit()
+                                            .frame(width: /*@START_MENU_TOKEN@*/100/*@END_MENU_TOKEN@*/, height: 250)
+                                    } .shadow(color: Color.yellow, radius: 0, x: 5, y:5)
+                                        .padding()
+                                    VStack{
+                                        Text("\(personaje.name)")
+                                            .font(/*@START_MENU_TOKEN@*/.title/*@END_MENU_TOKEN@*/)
+                                            .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+                                            .padding()
+                                        
+                                        Divider()
+                                        
+                                        Text("\(personaje.race)")
+                                        
+                                        Text("\(personaje.affiliation)")
+                                        
+                                    }
+                                    .padding()
                                     
+                                    .background(Color.white .cornerRadius(30) .shadow(color: Color.yellow, radius: 0, x: 5, y:5) )
+                                    .tint(Color.black)
+                                    
+                                    Divider()
+                                }
+                                .padding()
                                 
-                                Text("\(personaje.race)")
-                                
-                                Text("\(personaje.affiliation)")
-                            } .background(Color.white)
+                            }.simultaneousGesture(TapGesture().onEnded({
+                                controlador.seleccionar_mono_chino(personaje)
+                            }))
+                            
                         }
-                        Divider()
-                            .frame(height: 3)
-                            .background(LinearGradient(colors: [Color.clear, Color.yellow, Color.clear], startPoint: .leading, endPoint: .trailing))
                     }
-                }
-            } .background(Color.orange)
+                } .background(Color.orange)
+            }
         }
     }
 }
