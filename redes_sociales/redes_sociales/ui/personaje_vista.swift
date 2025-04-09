@@ -31,12 +31,15 @@ struct PersonajeVista: View {
                     .cornerRadius(40)
                 
                 VStack{
+
                     Text("Raza: \(controlador.personaje_seleccionado?.race ?? "Valor por defecto")")
                     Text("Género: \(controlador.personaje_seleccionado?.gender ?? "Valor por defecto")")
+                    Text("Planeta de origen: \(controlador.personaje_seleccionado?.originPlanet?.name ?? "Valor por defecto")")
                     Text("Afiliación: \(controlador.personaje_seleccionado?.affiliation ?? "Valor por defecto")")
                     
                     Text("Ki: \(controlador.personaje_seleccionado?.ki ?? "0")")
                     Text("Ki máximo: \(controlador.personaje_seleccionado?.maxKi ?? "0")")
+                    
                 }.padding()
                 
             }.padding()
@@ -50,6 +53,21 @@ struct PersonajeVista: View {
                     .padding(30)
                     .multilineTextAlignment(.center)
                     
+            }.padding()
+            
+            ZStack{
+                Rectangle()
+                    .foregroundColor(Color.white)
+                    .cornerRadius(40)
+                
+                Text("\(controlador.personaje_seleccionado?.transformations?.count)")
+                    .padding(30)
+                    .multilineTextAlignment(.center)
+
+                
+                Divider()
+                
+                
             }.padding()
            
         }.background(Color.orange)

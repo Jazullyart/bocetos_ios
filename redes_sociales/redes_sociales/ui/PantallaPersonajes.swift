@@ -50,7 +50,7 @@ struct PantallaPersonajes: View {
                                 .padding()
                                 
                             }.simultaneousGesture(TapGesture().onEnded({
-                                controlador.seleccionar_mono_chino(personaje)
+                                controlador.descargar_informacion_personaje(id: personaje.id)
                             }))
                             
                         }
