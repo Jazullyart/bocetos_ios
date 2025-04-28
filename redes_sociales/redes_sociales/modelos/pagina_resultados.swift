@@ -25,3 +25,9 @@ struct PaginaResultado: Codable {
     let meta: Meta
     let links: Enlaces
 }
+
+struct PaginaResultadoPlaneta: Codable {
+    let items: [Planeta]
+    let meta: Meta
+    let links: Enlaces
+}
