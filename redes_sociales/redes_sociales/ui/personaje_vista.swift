@@ -13,7 +13,7 @@ struct PersonajeVista: View {
     var body: some View {
         ScrollView{
             Text("\(controlador.personaje_seleccionado?.name ?? "Valor por defecto")")
-                .font(.system(size: 50))
+                .font(Font.custom("Saiyan-Sans Left Oblique", size: 50))
                 .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
                 .padding()
                 .shadow(color: Color.yellow, radius: 0, x: 5, y:5)
@@ -96,41 +96,44 @@ struct PersonajeVista: View {
                 }.padding()
             }.padding()
             
-            ZStack{
-                Rectangle()
-                    .foregroundColor(Color.white)
-                    .cornerRadius(40)
-                    .shadow(color: Color.yellow, radius: 0, x: 5, y:5)
-                
-                VStack{
-                    Text("Transformaciones")
-                        .font(.title2)
-                        .padding()
-                    Divider()
+            if(controlador.personaje_seleccionado?.transformations?.isEmpty == false){
+                ZStack{
+                    Rectangle()
+                        .foregroundColor(Color.white)
+                        .cornerRadius(40)
+                        .shadow(color: Color.yellow, radius: 0, x: 5, y:5)
                     
-                    ForEach(controlador.personaje_seleccionado?.transformations ?? []){ transformacion in
-                        HStack{
-                            AsyncImage(url: URL(string: "\(transformacion.image ?? "Valor por defecto")")){ image in
-                                image
-                                    .image?.resizable()
-                                    .scaledToFit()
-                                    .frame(width: 150, height: 300)
-                            }
-                            
-                            VStack{
-                                Text("\(transformacion.name)")
-                                    .padding(30)
-                                    .multilineTextAlignment(.center)
-                                Text("Ki: \(transformacion.ki)")
-                                    .padding(30)
-                                    .multilineTextAlignment(.center)
+                    VStack{
+                        Text("Transformaciones")
+                            .font(.title2)
+                            .padding()
+                        Divider()
+                        
+                        ForEach(controlador.personaje_seleccionado?.transformations ?? []){ transformacion in
+                            HStack{
+                                AsyncImage(url: URL(string: "\(transformacion.image ?? "Valor por defecto")")){ image in
+                                    image
+                                        .image?.resizable()
+                                        .scaledToFit()
+                                        .frame(width: 150, height: 300)
+                                }
+                                
+                                VStack{
+                                    Text("\(transformacion.name)")
+                                        .padding(30)
+                                        .multilineTextAlignment(.center)
+                                    Text("Ki: \(transformacion.ki)")
+                                        .padding(30)
+                                        .multilineTextAlignment(.center)
+                                }
                             }
                         }
                     }
-                }
-                
-                
-            }.padding()
+                    
+                    
+                }.padding()
+            }
+            
             
             
            

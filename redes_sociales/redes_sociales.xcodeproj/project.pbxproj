@@ -32,6 +32,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FB61615C2DC28AAC00D72676 /* Saiyan-Sans Left Oblique.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Saiyan-Sans Left Oblique.ttf"; path = "../../../../Downloads/saiyan_sans/Saiyan-Sans Left Oblique.ttf"; sourceTree = "<group>"; };
 		FB703A9A2D9AEC8400739303 /* menu_aplicacion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = menu_aplicacion.swift; sourceTree = "<group>"; };
 		FB790F012D945E91009BFD55 /* publicacion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = publicacion.swift; sourceTree = "<group>"; };
 		FB790F032D946335009BFD55 /* comentario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = comentario.swift; sourceTree = "<group>"; };
@@ -120,6 +121,7 @@
 				FB9648332D91B182009D609B /* modelos */,
 				FB9648252D91B0E4009D609B /* redes_socialesApp.swift */,
 				FB9648272D91B0E4009D609B /* ContentView.swift */,
+				FB61615C2DC28AAC00D72676 /* Saiyan-Sans Left Oblique.ttf */,
 				FB9648292D91B0E4009D609B /* Assets.xcassets */,
 				FB96482B2D91B0E4009D609B /* Preview Content */,
 			);

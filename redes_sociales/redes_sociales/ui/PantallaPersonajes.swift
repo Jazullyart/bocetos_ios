@@ -41,7 +41,6 @@ struct PantallaPersonajes: View {
                                         
                                     }
                                     .padding()
-                                    
                                     .background(Color.white .cornerRadius(30) .shadow(color: Color.yellow, radius: 0, x: 5, y:5) )
                                     .tint(Color.black)
                                     
