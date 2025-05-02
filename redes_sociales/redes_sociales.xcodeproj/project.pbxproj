@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB169C542DC5195700422AD3 /* PantallaDragonBall.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB169C532DC5195700422AD3 /* PantallaDragonBall.swift */; };
+		FB169C562DC51B9A00422AD3 /* estados_de_la_aplicacion.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB169C552DC51B9A00422AD3 /* estados_de_la_aplicacion.swift */; };
+		FB169C582DC51D2400422AD3 /* PantallaPlanetas.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB169C572DC51D2400422AD3 /* PantallaPlanetas.swift */; };
+		FB169C5A2DC51F8E00422AD3 /* planteta_vista.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB169C592DC51F8E00422AD3 /* planteta_vista.swift */; };
 		FB703A9B2D9AEC8400739303 /* menu_aplicacion.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB703A9A2D9AEC8400739303 /* menu_aplicacion.swift */; };
 		FB790F022D945E91009BFD55 /* publicacion.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB790F012D945E91009BFD55 /* publicacion.swift */; };
 		FB790F042D946335009BFD55 /* comentario.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB790F032D946335009BFD55 /* comentario.swift */; };
@@ -32,6 +36,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FB169C532DC5195700422AD3 /* PantallaDragonBall.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PantallaDragonBall.swift; sourceTree = "<group>"; };
+		FB169C552DC51B9A00422AD3 /* estados_de_la_aplicacion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = estados_de_la_aplicacion.swift; sourceTree = "<group>"; };
+		FB169C572DC51D2400422AD3 /* PantallaPlanetas.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PantallaPlanetas.swift; sourceTree = "<group>"; };
+		FB169C592DC51F8E00422AD3 /* planteta_vista.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = planteta_vista.swift; sourceTree = "<group>"; };
 		FB61615C2DC28AAC00D72676 /* Saiyan-Sans Left Oblique.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Saiyan-Sans Left Oblique.ttf"; path = "../../../../Downloads/saiyan_sans/Saiyan-Sans Left Oblique.ttf"; sourceTree = "<group>"; };
 		FB703A9A2D9AEC8400739303 /* menu_aplicacion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = menu_aplicacion.swift; sourceTree = "<group>"; };
 		FB790F012D945E91009BFD55 /* publicacion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = publicacion.swift; sourceTree = "<group>"; };
@@ -143,6 +151,7 @@
 				FB9648362D91B270009D609B /* Publicacion.swift */,
 				FB790F032D946335009BFD55 /* comentario.swift */,
 				FBDAEAE32D9700FD00DC9EE7 /* perfil.swift */,
+				FB169C552DC51B9A00422AD3 /* estados_de_la_aplicacion.swift */,
 			);
 			path = modelos;
 			sourceTree = "<group>";
@@ -199,6 +208,9 @@
 			children = (
 				FBEBF3E02DA0340F009C8696 /* PantallaPersonajes.swift */,
 				FBA61D6C2DA427640050A758 /* personaje_vista.swift */,
+				FB169C532DC5195700422AD3 /* PantallaDragonBall.swift */,
+				FB169C572DC51D2400422AD3 /* PantallaPlanetas.swift */,
+				FB169C592DC51F8E00422AD3 /* planteta_vista.swift */,
 			);
 			name = dragon_ball;
 			sourceTree = "<group>";
@@ -277,7 +289,9 @@
 				FB9648392D91B4A1009D609B /* placeholder_api.swift in Sources */,
 				FB9648372D91B270009D609B /* Publicacion.swift in Sources */,
 				FBDAEAE42D9700FD00DC9EE7 /* perfil.swift in Sources */,
+				FB169C542DC5195700422AD3 /* PantallaDragonBall.swift in Sources */,
 				FB9648282D91B0E4009D609B /* ContentView.swift in Sources */,
+				FB169C562DC51B9A00422AD3 /* estados_de_la_aplicacion.swift in Sources */,
 				FBA61D6D2DA427640050A758 /* personaje_vista.swift in Sources */,
 				FB790F042D946335009BFD55 /* comentario.swift in Sources */,
 				FB96483D2D91BC3F009D609B /* controlador_publicaciones.swift in Sources */,
@@ -291,7 +305,9 @@
 				FB86101A2D9D966600F3187A /* planeta.swift in Sources */,
 				FB790F022D945E91009BFD55 /* publicacion.swift in Sources */,
 				FB87D1E92D9453700080BBF1 /* controlador_app.swift in Sources */,
+				FB169C582DC51D2400422AD3 /* PantallaPlanetas.swift in Sources */,
 				FBEBF3E12DA0340F009C8696 /* PantallaPersonajes.swift in Sources */,
+				FB169C5A2DC51F8E00422AD3 /* planteta_vista.swift in Sources */,
 				FB86101E2D9D975D00F3187A /* transformacion.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

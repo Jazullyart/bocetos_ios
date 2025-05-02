@@ -11,4 +11,6 @@ struct Planeta: Identifiable, Codable{
     let isDestroyed: Bool
     let description: String
     let image: String
+    
+    let personajes_afiliados: Array<MonoChino>?
 }
